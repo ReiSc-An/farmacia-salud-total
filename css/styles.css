@@ -1,0 +1,351 @@
+/* Reinicio de estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente y fondo */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header{
+    background-color: #0b8f4d;
+    color: white;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menú */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+/* Sección de inicio */
+#inicio{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#inicio h2{
+    font-size: 40px;
+    color: #0b8f4d;
+    margin-bottom: 15px;
+}
+
+#inicio p{
+    font-size: 20px;
+    color: #555;
+}
+/* Productos */
+
+#productos{
+    padding: 50px;
+    text-align: center;
+}
+
+#productos h2{
+    color: #0b8f4d;
+    margin-bottom: 30px;
+}
+
+.contenedor-productos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.producto{
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+}
+
+.producto img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.producto h3{
+    margin-top: 15px;
+}
+
+.producto p{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.producto button{
+    background: #0b8f4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover{
+    background: #066b39;
+}
+/* Carrito */
+
+#carrito{
+    margin: 50px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+}
+
+#carrito h2{
+    color: #0b8f4d;
+    margin-bottom: 20px;
+}
+
+.item-carrito{
+    display:flex;
+    justify-content:space-between;
+    margin:10px 0;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+#total{
+    margin-top:20px;
+    color:#0b8f4d;
+}
+/* Buscador */
+
+.buscador{
+    margin-bottom:30px;
+}
+
+.buscador input{
+
+    width:350px;
+    padding:12px;
+
+    border-radius:8px;
+    border:1px solid #999;
+
+    font-size:18px;
+
+}
+.item-carrito button{
+
+    background: crimson;
+    color: white;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+.item-carrito button:hover{
+
+    background: darkred;
+
+}
+/* NOSOTROS */
+
+#nosotros{
+
+    padding:60px;
+
+    background:#eaf8ef;
+
+}
+
+#nosotros h2{
+
+    text-align:center;
+
+    color:#0b8f4d;
+
+    margin-bottom:40px;
+
+}
+
+.texto-nosotros{
+
+    width:80%;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:35px;
+
+}
+
+.texto-nosotros h3{
+
+    color:#0b8f4d;
+
+    margin-top:25px;
+
+}
+/* CONTACTO */
+
+#contacto{
+    padding: 60px;
+    background: #f4f4f4;
+}
+
+#contacto h2{
+    text-align: center;
+    color: #0b8f4d;
+    margin-bottom: 30px;
+}
+
+#formContacto{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formContacto input,
+#formContacto textarea{
+
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #999;
+    font-size: 16px;
+
+}
+
+#formContacto textarea{
+    height: 120px;
+    resize: none;
+}
+
+#formContacto button{
+
+    background: #0b8f4d;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+#formContacto button:hover{
+    background: #066b39;
+}
+/* FOOTER */
+
+footer{
+
+    background:#0b8f4d;
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:50px;
+
+}
+
+.footer-contenido h3{
+
+    margin-bottom:15px;
+
+}
+
+.footer-contenido p{
+
+    margin:8px;
+
+}
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .contenedor-productos{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    #formContacto{
+
+        width:90%;
+
+    }
+
+    .texto-nosotros{
+
+        width:100%;
+
+    }
+
+    .buscador input{
+
+        width:90%;
+
+    }
+
+}
+.producto{
+
+    transition:0.3s;
+
+}
+
+.producto:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0px 15px 30px rgba(0,0,0,.25);
+
+}
